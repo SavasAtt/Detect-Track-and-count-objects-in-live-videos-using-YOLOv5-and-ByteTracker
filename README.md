@@ -1,2 +1,5 @@
 # Detect-Track-and-count-objects-in-live-videos-using-YOLOv5-and-ByteTracker
- This project includes two COLAB notebooks (Train and Test) for detecting, tracking and counting falling bolts and nuts in live videos.
+ This project includes two COLAB notebooks (Train and Test) for detecting, tracking and counting falling bolts and nuts in live videos. We use YOLOv5 in this project.  the 'Train Notebook' is used for training the YOLOv5 model for 50 epochs. The trained model is also provided in this repository (best_model_YOLOv5s.pt) and it colud be used directly in 'Test Notebook' which contains necessary codes and libraries for tracking and counting objects using a pre-trained YOLO model and ByteTracker.  The tracking process is done using ByteTrack method in 'Test Notebook'. The dataset is consists of three subsets (train - test - valid) in mp4 video format.  the train dataset (train.mp4) is 4 min long while test and valid videos are 1 min long for each. The annotations related to each dataset is provided in JSON format.  All Colab notebooks and datasets are provided in this repository and Colab Notebooks.
+
+In 'Test Notebook' we can observe the trained model performance in different formats (PT, ONNX an TensorRT). Also we calculating the FPS, Max FPS and Mean FPS for each format.
+
